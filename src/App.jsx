@@ -1,11 +1,18 @@
 
 import './App.css'
+import DaysiNave from './components/DaysiNave'
+import NavBar from './components/NavBar/NavBar'
 
 function App() {
 
   return (
     <>
-<h1 className='text-2xl font-bold bg-amber-400'>hello</h1>
+      <header><DaysiNave></DaysiNave>
+      
+      <NavBar></NavBar></header>
+    <main>
+        
+    </main>
     </>
   )
 }
