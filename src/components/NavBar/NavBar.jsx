@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Blink from './Blink';
+import { IoMenu } from "react-icons/io5";
+import { IoClose } from "react-icons/io5";
 
 
 
@@ -13,14 +15,31 @@ const navigationData = [
 ];
 
 const NavBar = () => {
+
+  const [open, satOpen] = useState(false)
+  const links=navigationData.map(route => (<Blink key={route.id} route={ route}></Blink> ))
   return (
-    <nav>
-      <ul  className='flex'> {
-        navigationData.map(route => (<Blink key={route.id} route={ route}></Blink> ))
-       
+    <nav className='flex justify-between mx-9'>
+      {
+
+      }
+      <span className='flex ' onClick={() => satOpen(!open)}>
+        {open ? 
+<IoClose className='md:hidden' />:
+          <IoMenu className='md:hidden' />}
+        
+        <ul className={`md:hidden absolute rounded-2xl  p-3 duration-1000
+          ${open ? 'top-20' : '-top-40'}
+          bg-amber-400 `}> {links}</ul>
+        
+      <h2 className='ml-4'>My nabar</h2></span>
+      <ul  className=' md:flex hidden'>  {
+        
+    links   
 };
 
       </ul>
+      <button>sign in</button>
     
       {/* <ul className='flex'>
         {
