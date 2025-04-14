@@ -7,7 +7,7 @@ const PriceOption = ({pricingPromis}) => {
   return (
     <div>
       <h1 className='text-5xl'>Get Our membership</h1>
-      <div className='grid md:grid-cols-3'>
+      <div className='grid lg:grid-cols-3 md:grid-cols-2'>
         {
           pricingData.map(pricing=><PricingCart key={pricing.id} pricing={pricing}></PricingCart>)
         }
