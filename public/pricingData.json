@@ -1,0 +1,39 @@
+[
+  {
+    "id": 1,
+    "name": "Basic Plan",
+    "price": "$29/month",
+    "features": [
+      "Access to gym equipment",
+      "Locker room access",
+      "1 personal training session/month",
+      "Free Wi-Fi"
+    ],
+    "description": "The Basic Plan offers essential access to the gym, including equipment and locker rooms, along with one personal training session per month to help you get started on your fitness journey. Ideal for beginners who want to work out on their own."
+  },
+  {
+    "id": 2,
+    "name": "Standard Plan",
+    "price": "$49/month",
+    "features": [
+      "Everything in Basic",
+      "Unlimited group classes",
+      "3 personal training sessions/month",
+      "Access to sauna and steam room"
+    ],
+    "description": "The Standard Plan builds on the Basic Plan with unlimited access to group fitness classes, three personal training sessions per month, and access to the sauna and steam room. This plan is perfect for those who want more personalized guidance and enjoy group workouts."
+  },
+  {
+    "id": 3,
+    "name": "Premium Plan",
+    "price": "$79/month",
+    "features": [
+      "Everything in Standard",
+      "Daily protein shake",
+      "Unlimited personal training",
+      "Priority support & booking",
+      "Free gym merch pack"
+    ],
+    "description": "The Premium Plan offers the ultimate gym experience with unlimited personal training, daily protein shakes, priority support, and booking. You'll also receive a free gym merch pack. This plan is perfect for fitness enthusiasts who want to take their training to the next level and enjoy exclusive benefits."
+  }
+]
